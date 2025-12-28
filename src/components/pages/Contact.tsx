@@ -44,7 +44,7 @@ export default function Contact() {
           <div className="grid md:grid-cols-2 gap-12 items-start">
             <div className="relative h-[600px] rounded-lg overflow-hidden">
               <img
-                src="/images/frank_casual.jpg"
+                src="/images/frank_chari.jpg"
                 alt="Frank Berton"
                 className="w-full h-full object-cover"
               />

@@ -56,7 +56,7 @@ export default function HeroSection() {
         >
           <div className="relative overflow-hidden rounded-lg shadow-2xl">
             <img
-              src="/images/frank_home.jpg"
+              src="/images/frank_casual.jpg"
               alt="Professional Leadership Coach"
               className="w-full h-auto aspect-[3/4] object-cover"
             />
