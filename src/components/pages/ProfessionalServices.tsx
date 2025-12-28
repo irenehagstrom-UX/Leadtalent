@@ -16,11 +16,11 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 const serviceAnchors = [
-  { id: "executive-coaching", title: "1:1 Executive Coaching", icon: Target },
-  { id: "team-development", title: "Team Development", icon: Users },
+  { id: "executive-coaching", title: "1:1 Executive coaching", icon: Target },
+  { id: "team-development", title: "Team development", icon: Users },
   {
     id: "assessment-centres",
-    title: "Assessment Centres",
+    title: "Assessment centres",
     icon: ClipboardCheck,
   },
 ];
@@ -133,7 +133,7 @@ export default function ProfessionalServices() {
         <div className="max-w-6xl mx-auto">
           <AnimatedSection className="text-center mb-12">
             <h2 className="font-display font-semibold text-3xl md:text-4xl text-charcoal">
-              Service Offerings
+              Service offerings
             </h2>
           </AnimatedSection>
 
@@ -178,7 +178,7 @@ export default function ProfessionalServices() {
                 <Target className="w-7 h-7 text-sienna" />
               </div>
               <h2 className="font-display font-semibold text-4xl text-charcoal">
-                1:1 Executive Coaching
+                1:1 Executive coaching
               </h2>
             </div>
             <p className="font-body text-lg text-warmgray leading-relaxed">
@@ -192,7 +192,7 @@ export default function ProfessionalServices() {
           <AnimatedSection className="mb-12">
             <div className="bg-white rounded-lg p-8 shadow-[0_8px_32px_rgba(0,0,0,0.08)]">
               <h3 className="font-display font-semibold text-2xl text-charcoal mb-4">
-                A collaborative Coaching partnership
+                A collaborative coaching partnership
               </h3>
               <div className="font-body text-warmgray leading-relaxed space-y-4">
                 <p>
@@ -214,7 +214,7 @@ export default function ProfessionalServices() {
           <AnimatedSection className="mb-12">
             <div className="bg-white rounded-lg p-8 shadow-[0_8px_32px_rgba(0,0,0,0.08)]">
               <h3 className="font-display font-semibold text-2xl text-charcoal mb-4">
-                Tailored Development Plan
+                Tailored development plan
               </h3>
               <p className="font-body text-warmgray leading-relaxed mb-6">
                 Each coaching engagement begins with a personal development
@@ -242,7 +242,7 @@ export default function ProfessionalServices() {
           <AnimatedSection>
             <div className="bg-charcoal rounded-lg p-8">
               <h3 className="font-display font-semibold text-2xl text-cream mb-4">
-                Engagement Format
+                Engagement format
               </h3>
               <p className="font-body text-sage leading-relaxed">
                 Executive coaching typically runs between three and twelve
@@ -269,7 +269,7 @@ export default function ProfessionalServices() {
                 <Users className="w-7 h-7 text-sienna" />
               </div>
               <h2 className="font-display font-semibold text-4xl text-charcoal">
-                Team Development
+                Team development
               </h2>
             </div>
             <p className="font-body text-lg text-warmgray leading-relaxed">
@@ -282,7 +282,7 @@ export default function ProfessionalServices() {
           <AnimatedSection className="mb-12">
             <div className="bg-white rounded-lg p-8 shadow-[0_8px_32px_rgba(0,0,0,0.08)]">
               <h3 className="font-display font-semibold text-2xl text-charcoal mb-4">
-                Focus Areas
+                Focus areas
               </h3>
               <p className="font-body text-warmgray leading-relaxed mb-6">
                 Team development initiatives are designed to strengthen
@@ -364,7 +364,7 @@ export default function ProfessionalServices() {
                 <ClipboardCheck className="w-7 h-7 text-sienna" />
               </div>
               <h2 className="font-display font-semibold text-4xl text-charcoal">
-                Assessment Centres
+                Assessment centres
               </h2>
             </div>
             <p className="font-body text-lg text-warmgray leading-relaxed">
@@ -392,7 +392,7 @@ export default function ProfessionalServices() {
           <AnimatedSection className="mb-12">
             <div className="bg-white rounded-lg p-8 shadow-[0_8px_32px_rgba(0,0,0,0.08)]">
               <h3 className="font-display font-semibold text-2xl text-charcoal mb-4">
-                Assessment Methods
+                Assessment methods
               </h3>
               <p className="font-body text-warmgray leading-relaxed mb-6">
                 With extensive experience facilitating assessment centres, I

@@ -215,7 +215,7 @@ export default function IndividualServices() {
         <div className="max-w-6xl mx-auto">
           <AnimatedSection className="text-center mb-16">
             <h2 className="font-display font-semibold text-4xl text-charcoal">
-              Coaching Options
+              Coaching options
             </h2>
           </AnimatedSection>
 
@@ -228,7 +228,7 @@ export default function IndividualServices() {
                     Start Here
                   </div>
                   <h3 className="font-display font-semibold text-2xl text-charcoal mb-4">
-                    Free Get-to-Know Session
+                    Free get-to-know session
                   </h3>
                   <p className="font-body text-warmgray leading-relaxed">
                     A free, no-obligation 15 minute meeting to learn about my
@@ -255,7 +255,7 @@ export default function IndividualServices() {
                     3 Months
                   </div>
                   <h3 className="font-display font-semibold text-2xl text-cream mb-4">
-                    Standard Coaching Package
+                    Standard coaching package
                   </h3>
                   <div className="space-y-3">
                     {[
@@ -290,7 +290,7 @@ export default function IndividualServices() {
                     5–9 Months
                   </div>
                   <h3 className="font-display font-semibold text-2xl text-charcoal mb-4">
-                    Deep Dive Coaching
+                    Deep dive coaching
                   </h3>
                   <div className="space-y-3 mb-4">
                     {[
