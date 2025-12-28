@@ -91,7 +91,7 @@ export default function Footer() {
                 { label: "Executive coaching", path: "/professional-services", hash: "executive-coaching" },
                 { label: "Team development", path: "/professional-services", hash: "team-development" },
                 { label: "Assessment centers", path: "/professional-services", hash: "assessment-centres" },
-                { label: "Individual coaching", path: "/individual-services", hash: "" },
+                { label: "Personal coaching", path: "/individual-services" },
               ].map((service) => (
                 <li key={service.label}>
                   <button
