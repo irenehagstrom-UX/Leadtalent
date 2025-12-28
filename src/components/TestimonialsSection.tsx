@@ -91,71 +91,51 @@ export default function TestimonialsSection() {
           </h2>
         </motion.div>
 
-        <div className="relative">
-          <div className="overflow-hidden">
-            <AnimatePresence initial={false} custom={direction}>
-              <motion.div
-                key={currentIndex}
-                custom={direction}
-                variants={slideVariants}
-                initial="enter"
-                animate="center"
-                exit="exit"
-                transition={{
-                  x: { type: "spring", stiffness: 300, damping: 30 },
-                  opacity: { duration: 0.6 },
-                }}
-                className="absolute inset-0"
-              >
-                <div className="bg-white rounded-lg p-12 md:p-16 shadow-xl">
-                  <Quote className="w-12 h-12 text-sienna/20 mb-8" />
+        <div className="relative overflow-hidden min-h-[400px] mb-12">
+          <AnimatePresence initial={false} custom={direction}>
+            <motion.div
+              key={currentIndex}
+              custom={direction}
+              variants={slideVariants}
+              initial="enter"
+              animate="center"
+              exit="exit"
+              transition={{
+                x: { type: "spring", stiffness: 300, damping: 30 },
+                opacity: { duration: 0.6 },
+              }}
+              className="absolute inset-0 pointer-events-none"
+            >
+              <div className="bg-white rounded-lg p-12 md:p-16 shadow-xl pointer-events-auto">
+                <Quote className="w-12 h-12 text-sienna/20 mb-8" />
 
-                  <blockquote className="font-body text-xl md:text-2xl text-charcoal leading-relaxed mb-12">
-                    "{testimonials[currentIndex].quote}"
-                  </blockquote>
-
-                  <div className="flex items-center gap-6">
-                    <img
-                      src={testimonials[currentIndex].image}
-                      alt={testimonials[currentIndex].name}
-                      className="w-16 h-16 rounded-full object-cover"
-                    />
-                    <div>
-                      <div className="font-display font-semibold text-lg text-charcoal">
-                        {testimonials[currentIndex].name}
-                      </div>
-                      <div className="font-body text-sage">
-                        {testimonials[currentIndex].role},{" "}
-                        {testimonials[currentIndex].company}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
-            </AnimatePresence>
-
-            {/* Spacer to maintain height */}
-            <div className="opacity-0 pointer-events-none">
-              <div className="bg-white rounded-lg p-12 md:p-16 shadow-xl">
-                <Quote className="w-12 h-12 mb-8" />
-                <blockquote className="font-body text-xl md:text-2xl leading-relaxed mb-12">
+                <blockquote className="font-body text-xl md:text-2xl text-charcoal leading-relaxed mb-12">
                   "{testimonials[currentIndex].quote}"
                 </blockquote>
+
                 <div className="flex items-center gap-6">
-                  <div className="w-16 h-16 rounded-full"></div>
+                  <img
+                    src={testimonials[currentIndex].image}
+                    alt={testimonials[currentIndex].name}
+                    className="w-16 h-16 rounded-full object-cover"
+                  />
                   <div>
-                    <div className="font-display font-semibold text-lg">
-                      Name
+                    <div className="font-display font-semibold text-lg text-charcoal">
+                      {testimonials[currentIndex].name}
                     </div>
-                    <div className="font-body">Role, Company</div>
+                    <div className="font-body text-sage">
+                      {testimonials[currentIndex].role},{" "}
+                      {testimonials[currentIndex].company}
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
+            </motion.div>
+          </AnimatePresence>
+        </div>
 
-          {/* Navigation */}
-          <div className="flex items-center justify-center gap-8 mt-12">
+        {/* Navigation */}
+        <div className="flex items-center justify-center gap-8">
             <button
               onClick={() => paginate(-1)}
               className="w-12 h-12 rounded-full border-2 border-charcoal flex items-center justify-center hover:bg-charcoal hover:text-cream transition-all duration-200"
@@ -188,7 +168,6 @@ export default function TestimonialsSection() {
               <ChevronRight className="w-6 h-6" />
             </button>
           </div>
-        </div>
       </div>
     </section>
   );

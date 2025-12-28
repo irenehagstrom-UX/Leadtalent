@@ -24,6 +24,20 @@ export default function Footer() {
     }
   };
 
+  const navigateToPageSection = (path: string, hash?: string) => {
+    if (hash) {
+      navigate(path);
+      setTimeout(() => {
+        const element = document.getElementById(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }, 100);
+    } else {
+      navigate(path);
+    }
+  };
+
   return (
     <footer className="bg-charcoal text-cream py-16 px-8 md:px-16 lg:px-24">
       <div className="max-w-7xl mx-auto">
@@ -74,18 +88,18 @@ export default function Footer() {
             <div className="font-ui text-sm font-medium mb-4">Services</div>
             <ul className="space-y-2">
               {[
-                { label: "Executive coaching", path: "/professional-services#executive-coaching" },
-                { label: "Team development", path: "/professional-services#team-development" },
-                { label: "Assessment centers", path: "/professional-services#assessment-centres" },
-                { label: "Individual coaching", path: "/individual-services" },
+                { label: "Executive coaching", path: "/professional-services", hash: "executive-coaching" },
+                { label: "Team development", path: "/professional-services", hash: "team-development" },
+                { label: "Assessment centers", path: "/professional-services", hash: "assessment-centres" },
+                { label: "Individual coaching", path: "/individual-services", hash: "" },
               ].map((service) => (
                 <li key={service.label}>
-                  <a
-                    href={service.path}
-                    className="font-body text-sm text-sage hover:text-cream transition-colors"
+                  <button
+                    onClick={() => navigateToPageSection(service.path, service.hash)}
+                    className="font-body text-sm text-sage hover:text-cream transition-colors text-left"
                   >
                     {service.label}
-                  </a>
+                  </button>
                 </li>
               ))}
             </ul>
