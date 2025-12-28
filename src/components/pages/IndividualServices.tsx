@@ -365,7 +365,7 @@ export default function IndividualServices() {
         <AnimatedSection className="max-w-3xl mx-auto">
           <div className="bg-white rounded-lg p-8 md:p-12 shadow-[0_8px_32px_rgba(0,0,0,0.08)]">
             <h2 className="font-display font-semibold text-3xl md:text-4xl text-charcoal text-center mb-6">
-              Is Coaching right for you?
+              Is coaching right for you?
             </h2>
             <p className="font-body text-lg text-warmgray leading-relaxed text-center mb-8">
               Lasting change requires commitment and openness. Coaching may be a
