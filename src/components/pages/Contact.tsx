@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
-import { useRef } from 'react';
+import { useRef, useEffect } from 'react';
 import { Mail, Phone, MapPin, Linkedin, Image } from 'lucide-react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
@@ -23,6 +23,9 @@ function AnimatedSection({ children, className = '' }: { children: React.ReactNo
 }
 
 export default function Contact() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="w-full min-h-screen bg-cream paper-texture overflow-x-hidden">
       <Navigation />
