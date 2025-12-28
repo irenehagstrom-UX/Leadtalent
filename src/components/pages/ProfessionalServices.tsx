@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import {
   Target,
   Users,
@@ -117,13 +117,13 @@ export default function ProfessionalServices() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className="inline-flex items-center gap-2 font-ui px-8 py-4 bg-[#A84867] hover:bg-[#8a3a54] text-cream rounded-lg transition-all duration-200 hover:scale-[1.02] shadow-lg hover:shadow-xl"
             >
               Book an introductory call
               <ArrowRight className="w-4 h-4" />
-            </a>
+            </Link>
           </motion.div>
         </div>
       </section>
@@ -495,13 +495,13 @@ export default function ProfessionalServices() {
             how we can work together.
           </p>
           <div className="pt-4">
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className="inline-flex items-center gap-2 font-ui px-10 py-5 bg-cream hover:bg-white text-charcoal rounded-lg transition-all duration-200 hover:scale-[1.02] shadow-lg"
             >
               Contact Me
               <ArrowRight className="w-4 h-4" />
-            </a>
+            </Link>
           </div>
         </AnimatedSection>
       </section>

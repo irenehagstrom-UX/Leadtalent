@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 import {
   ArrowRight,
   Check,
@@ -138,13 +139,13 @@ export default function IndividualServices() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className="inline-flex items-center gap-2 font-ui px-8 py-4 bg-[#A84867] hover:bg-[#8a3a54] text-cream rounded-lg transition-all duration-200 hover:scale-[1.02] shadow-lg hover:shadow-xl"
             >
               Book your free 15 minute Get-to-Know call
               <ArrowRight className="w-4 h-4" />
-            </a>
+            </Link>
           </motion.div>
         </div>
       </section>
@@ -399,13 +400,13 @@ export default function IndividualServices() {
             right for you, start with a free, no-obligation conversation.
           </p>
           <div className="pt-4">
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className="inline-flex items-center gap-2 font-ui px-10 py-5 bg-cream hover:bg-white text-charcoal rounded-lg transition-all duration-200 hover:scale-[1.02] shadow-lg"
             >
               Book your free 15 minute Get-to-Know call
               <ArrowRight className="w-4 h-4" />
-            </a>
+            </Link>
           </div>
         </AnimatedSection>
       </section>

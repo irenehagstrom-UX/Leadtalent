@@ -1,5 +1,5 @@
 import { Mail, Linkedin, Phone } from "lucide-react";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate, useLocation, Link } from "react-router-dom";
 
 export default function Footer() {
   const navigate = useNavigate();
@@ -110,26 +110,27 @@ export default function Footer() {
             <div className="font-ui text-sm font-medium mb-4">Get in Touch</div>
 
             <div className="flex gap-3 mt-6">
-              {[
-                { icon: Phone, href: "/contact" },
-                { icon: Mail, href: "mailto:frank.berton@leadtalent.de" },
-                {
-                  icon: Linkedin,
-                  href: "https://www.linkedin.com/in/frank-berton-executive-coach",
-                },
-              ].map((social, index) => {
-                const Icon = social.icon;
-                return (
-                  <a
-                    key={index}
-                    href={social.href}
-                    className="w-10 h-10 rounded-full border border-sage/30 hover:border-cream flex items-center justify-center text-sage hover:text-cream transition-all duration-200"
-                    aria-label="Social media link"
-                  >
-                    <Icon className="w-4 h-4" />
-                  </a>
-                );
-              })}
+              <Link
+                to="/contact"
+                className="w-10 h-10 rounded-full border border-sage/30 hover:border-cream flex items-center justify-center text-sage hover:text-cream transition-all duration-200"
+                aria-label="Contact"
+              >
+                <Phone className="w-4 h-4" />
+              </Link>
+              <a
+                href="mailto:frank.berton@leadtalent.de"
+                className="w-10 h-10 rounded-full border border-sage/30 hover:border-cream flex items-center justify-center text-sage hover:text-cream transition-all duration-200"
+                aria-label="Email"
+              >
+                <Mail className="w-4 h-4" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/frank-berton-executive-coach"
+                className="w-10 h-10 rounded-full border border-sage/30 hover:border-cream flex items-center justify-center text-sage hover:text-cream transition-all duration-200"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="w-4 h-4" />
+              </a>
             </div>
           </div>
         </div>
@@ -141,12 +142,12 @@ export default function Footer() {
               © 2026 LeadTalent Leadership Coaching. All rights reserved.
             </div>
             <span className="text-sage">·</span>
-            <a
-              href="/privacy-policy"
+            <Link
+              to="/privacy-policy"
               className="font-body text-sm text-sage hover:text-cream transition-colors"
             >
               Privacy Policy
-            </a>
+            </Link>
           </div>
         </div>
       </div>
