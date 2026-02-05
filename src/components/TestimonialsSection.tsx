@@ -90,7 +90,7 @@ export default function TestimonialsSection() {
           </h2>
         </motion.div>
 
-        <div className="relative overflow-hidden min-h-[400px] mb-12">
+        <div className="relative overflow-hidden min-h-[500px] md:min-h-[400px] mb-12">
           <AnimatePresence initial={false} custom={direction}>
             <motion.div
               key={currentIndex}
@@ -103,28 +103,27 @@ export default function TestimonialsSection() {
                 x: { type: "spring", stiffness: 300, damping: 30 },
                 opacity: { duration: 0.6 },
               }}
-              className="absolute inset-0 pointer-events-none"
+              className="absolute inset-0 w-full pointer-events-none"
             >
-              <div className="bg-white rounded-lg p-12 md:p-16 shadow-xl pointer-events-auto">
-                <Quote className="w-8 h-8 text-sienna/20 mb-4" />
+              <div className="bg-white rounded-lg p-6 md:p-12 lg:p-16 shadow-xl pointer-events-auto h-full flex flex-col overflow-y-auto max-h-[600px]">
+                <Quote className="w-6 h-6 md:w-8 md:h-8 text-sienna/20 mb-3 md:mb-4 flex-shrink-0" />
 
-                <blockquote className="font-body text-lg md:text-xl text-charcoal leading-relaxed mb-12">
+                <blockquote className="font-body text-base md:text-lg lg:text-xl text-charcoal leading-relaxed mb-6 md:mb-12 flex-grow">
                   "{testimonials[currentIndex].quote}"
                 </blockquote>
 
-                <div className="flex items-center gap-6">
+                <div className="flex items-center gap-4 md:gap-6 flex-shrink-0">
                   <img
                     src={testimonials[currentIndex].image}
                     alt={testimonials[currentIndex].name}
-                    className="w-16 h-16 rounded-full object-cover"
+                    className="w-12 h-12 md:w-16 md:h-16 rounded-full object-cover flex-shrink-0"
                   />
                   <div>
-                    <div className="font-display font-semibold text-lg text-charcoal">
+                    <div className="font-display font-semibold text-base md:text-lg text-charcoal">
                       {testimonials[currentIndex].name}
                     </div>
-                    <div className="font-body text-sage">
-                      {testimonials[currentIndex].role},{" "}
-                      {testimonials[currentIndex].company}
+                    <div className="font-body text-sm md:text-base text-sage">
+                      {testimonials[currentIndex].role}{testimonials[currentIndex].company && `, ${testimonials[currentIndex].company}`}
                     </div>
                   </div>
                 </div>
