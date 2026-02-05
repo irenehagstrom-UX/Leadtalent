@@ -22,7 +22,7 @@ export default function PhilosophySection() {
         </div>
 
         <h2 className="font-display font-semibold text-4xl md:text-5xl lg:text-[42px] text-charcoal leading-tight">
-          Leadership is not about having all the answers
+          Leadership is not about having all the answers{" "}
           <br className="hidden md:block" />
           it's about asking the right questions.
         </h2>

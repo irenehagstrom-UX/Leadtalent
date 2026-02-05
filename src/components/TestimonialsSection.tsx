@@ -6,21 +6,20 @@ import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 const testimonials = [
   {
     quote:
-      "Working with this coach transformed not just my leadership style, but my entire approach to decision-making. The ROI has been immeasurable—both for me personally and for our organization's bottom line.",
-    name: "Sarah Chen",
-    role: "CEO",
-    company: "TechVentures Inc.",
-    image:
-      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
+      "Frank brought his thoughtful brand of support, enthusiasm and experience in dealing with change to each meeting. With the aid of weekly exercises, Frank helped me to understand my core values, the reasons that I will be successful and through this to ultimately identify my future career path. Combined with practical guidance for CV writing, job searching, and career planning Frank helped immeasurably with my successful career progression.",
+    name: "Kenneth Young",
+    role: "VP Global Pharma",
+    company: "",
+    image: "/images/ken_young.jpeg",
   },
   {
     quote:
-      "In six months, I went from feeling overwhelmed by my responsibilities to leading with clarity and confidence. The tools and frameworks I learned continue to serve me every single day.",
-    name: "Michael Rodriguez",
-    role: "COO",
-    company: "Global Dynamics",
+      "Working with Frank was a grounding experience during a very uncertain time. After being laid off, I felt overwhelmed and unsure of my next steps, but his coaching helped me regain clarity and confidence. He asks thoughtful questions and creates a space where you feel truly heard. What I appreciated most was his practical, down-to-earth advice that I could apply right away. Each session left me feeling more focused, motivated, and ready to move forward. I'm very grateful for his guidance and highly recommend him to anyone navigating a transition or seeking a fresh perspective.",
+    name: "Irina Klusova",
+    role: "Senior HR Manager - Global Pharma - Dubai",
+    company: "",
     image:
-      "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
+      "/images/Irina_Klusova.jpeg",
   },
   {
     quote:
@@ -107,9 +106,9 @@ export default function TestimonialsSection() {
               className="absolute inset-0 pointer-events-none"
             >
               <div className="bg-white rounded-lg p-12 md:p-16 shadow-xl pointer-events-auto">
-                <Quote className="w-12 h-12 text-sienna/20 mb-8" />
+                <Quote className="w-8 h-8 text-sienna/20 mb-4" />
 
-                <blockquote className="font-body text-xl md:text-2xl text-charcoal leading-relaxed mb-12">
+                <blockquote className="font-body text-lg md:text-xl text-charcoal leading-relaxed mb-12">
                   "{testimonials[currentIndex].quote}"
                 </blockquote>
 
