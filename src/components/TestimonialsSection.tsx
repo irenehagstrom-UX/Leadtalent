@@ -90,8 +90,8 @@ export default function TestimonialsSection() {
           </h2>
         </motion.div>
 
-        <div className="relative overflow-hidden min-h-[500px] md:min-h-[400px] mb-12">
-          <AnimatePresence initial={false} custom={direction}>
+        <div className="relative mb-12">
+          <AnimatePresence initial={false} custom={direction} mode="wait">
             <motion.div
               key={currentIndex}
               custom={direction}
@@ -103,16 +103,16 @@ export default function TestimonialsSection() {
                 x: { type: "spring", stiffness: 300, damping: 30 },
                 opacity: { duration: 0.6 },
               }}
-              className="absolute inset-0 w-full pointer-events-none"
+              className="w-full"
             >
-              <div className="bg-white rounded-lg p-6 md:p-12 lg:p-16 shadow-xl pointer-events-auto h-full flex flex-col overflow-y-auto max-h-[600px]">
-                <Quote className="w-6 h-6 md:w-8 md:h-8 text-sienna/20 mb-3 md:mb-4 flex-shrink-0" />
+              <div className="bg-white rounded-lg p-6 md:p-12 lg:p-16 shadow-xl">
+                <Quote className="w-6 h-6 md:w-8 md:h-8 text-sienna/20 mb-3 md:mb-4" />
 
-                <blockquote className="font-body text-base md:text-lg lg:text-xl text-charcoal leading-relaxed mb-6 md:mb-12 flex-grow">
+                <blockquote className="font-body text-base md:text-lg lg:text-xl text-charcoal leading-relaxed mb-6 md:mb-12">
                   "{testimonials[currentIndex].quote}"
                 </blockquote>
 
-                <div className="flex items-center gap-4 md:gap-6 flex-shrink-0">
+                <div className="flex items-center gap-4 md:gap-6">
                   <img
                     src={testimonials[currentIndex].image}
                     alt={testimonials[currentIndex].name}
