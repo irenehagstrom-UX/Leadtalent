@@ -23,12 +23,11 @@ const testimonials = [
   },
   {
     quote:
-      "This coaching engagement was the catalyst for a complete cultural transformation in our organization. The ripple effects of my personal growth touched every level of the company.",
-    name: "Jennifer Park",
-    role: "Chief People Officer",
-    company: "Innovation Labs",
-    image:
-      "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+      "Working with Frank made a real difference during my job search. It was always a pleasure having a session with him because he brought a positive attitude coupled with valuable tips. Frank helped me identify a range roles that could build on my expertise while challenging me in new industries / company scales. He then provided valuable feedback to my CV in the context of the different roles I decided to target. Once I was applying and going through interviews, he helped me build the confidence needed to ace the process. Practical, supportive, and exactly what I needed.",
+    name: "Elitsa Manova",
+    role: "Head of Strategy",
+    company: "HelloFresh",
+    image: "/images/Manova.jpeg",
   },
 ];
 
